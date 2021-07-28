@@ -39,6 +39,6 @@ RSA encryption with a very small `e = 5` (usual is 0x10001). Google can help fin
 ### Roll it back
 The programm takes `flag`, and repeatedly shifts it one bit to the right. The free space on the left is filled with `1` or `0` depending on the current value of `flag` and `T` (where `T` is a constant value we can compute just like the program did).
 When we want to undo a single operation, we shift the result one to the left and clear the leftmost bit. The only problem is that the least significant bit was dropped in the program by the right shift. But there are only two options for this bit. So we try both and check whether applying the operation gives our result or not. It is important, that __exactly__ one the two options gives our result. So we can undo one operation at a time until we are back at the initial flag value.
-My code can be found [here]()
+My code can be found [here](https://github.com/DerBaer0/CTF-writeups/blob/main/2021-imaginaryctf/rollback_exploit.py)
 
 

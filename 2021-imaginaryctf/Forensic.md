@@ -1,4 +1,4 @@
-# Reversing Challenges
+# Forensic Challenges
 
 Writeups in this file only give a brief description. 
 ### Vacation

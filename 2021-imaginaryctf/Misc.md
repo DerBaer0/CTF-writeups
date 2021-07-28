@@ -22,4 +22,4 @@ After more a lot of more googling, I found how to autocomplete paths in Insert M
 So: Open /usr/bin/env, type `/home/user/`, press `<Ctrl-X> <Ctrl-F>` and autocomplete with the secret file. Open it.
 
 ### Mazed
-We are given a 4-dimensional grid with walls (`#`) and spaces (`.`) and need to go from start to the flag. This is not a vulnerability challenge but a programming challenge. My code can be found [here](). It does a Depth First Search starting from the end to visit new places until it finds the start while keeping track of already visited places and how to get from there to the end.
+We are given a 4-dimensional grid with walls (`#`) and spaces (`.`) and need to go from start to the flag. This is not a vulnerability challenge but a programming challenge. My code can be found [here](https://github.com/DerBaer0/CTF-writeups/blob/main/2021-imaginaryctf/maze_exploit.py). It does a Depth First Search starting from the end to visit new places until it finds the start while keeping track of already visited places and how to get from there to the end.

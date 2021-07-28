@@ -12,7 +12,7 @@ The program does some computation to build the flag inside memory. You can use `
 
 ### Normal
 This is a Verilog file, so basically a description how to wire up some gates. I have no idea about Verilog, but with some intuition, I could guess, how to understand the syntax (otherwise, google will probably help). So we have some input wires (`flag`), a wire plan for some `nor` gates, and in the end, the output wires (`wrong`) shall all be zero. We can use the powerful SMT-solver `z3` to do simply solve the task for us. 
-
+```python
 	from z3 import *
 
 	inp = BitVec('in', 256)
@@ -32,6 +32,8 @@ This is a Verilog file, so basically a description how to wire up some gates. I 
 
 	m = solve(out == 0)
 	print(m)
+```
+
 That's it. We declare `inp` to be a bitvector of size 256 (this is the flag). Later, we want `z3` to find out which bit needs to be 1 in flag.
 The two constants are taken from the code and represent wires with fixed values.
 The next lines are directly translated from the code. `nor n1 [255:0] (w1, in, c1);` means:
@@ -57,22 +59,26 @@ We are given an interpreter for the language `roolang` that contains of small im
 1. Roolang reads the image file ("source code"), and constructs a string of letters `binor`.
 2. It splits the string in chunks of 5 letters, those chunks are the commands evaluated by the interpreter
 3. -- roolang does everything up to now for us. We don't need to parse the images ourself etc.
-4. If we look at the various command handlers, we can guess what they do (`POP`, `ADD`, ...). roolang is a stack machine. I added a mapping from roolang-opcode to common names and printed the code.
+4. If we look at the various command handlers, we can guess what they do (`POP`, `ADD`, ...). roolang is a stack machine. I added a mapping from roolang-opcode to common names and printed the code. The code can be found [here](https://github.com/DerBaer0/CTF-writeups/blob/main/2021-imaginaryctf/roolang.code).
 5. Analyzing the code, we can see, that it calls `robin` with some loop variable and uses the result to xor it with one of the constants pushed in the beginning. Afterwards, it increments the loop variable, calls `robin` again, xor, output. etc. The problem is, that the call to `robin` is slower and slower every time.
 6. What does `robin` do? It is the recursive implementation of fibonacci. And there is only one function existing in this program. This leads to the following solution:
 7. I change the handler for `call` to not call the function, but apply the effect on the stack, that is: Pop the argument, compute the corresponding fibonacci number (in a much faster way), push the result back to the stack, continue execution after the call. So, here is the original call handler:
-	def roiin():
-		global insn_pointer
-		arg = stack.pop()
-		stack.push(insn_pointer+1)
-		stack.push(arg)
-		rioon()
-
+```python
+    def roiin():
+        global insn_pointer
+        arg = stack.pop()
+        stack.push(insn_pointer+1)
+        stack.push(arg)
+        rioon()
+```
 And here is mine:
-	def roiin():
-		global insn_pointer
-		arg = stack.pop()
-		stack.push(fibs[arg])
-		insn_pointer+=1
-And not it is blazingly fast. Fun challenge.
+```python
+    def roiin():
+        global insn_pointer
+        arg = stack.pop()
+        stack.push(fibs[arg])
+        insn_pointer+=1
+```
+And now it is blazingly fast. Fun challenge.
 (Other solutions would include looking at the stack and guessing what is happening, rewriting the roocode to be more effizient or rewrite it in python) 
+

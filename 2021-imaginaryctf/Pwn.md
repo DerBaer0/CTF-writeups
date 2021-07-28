@@ -8,7 +8,6 @@ Writeups in this file only give a brief description.
 ### fake_canary
 We first run `checksec --file=fake_canary` that tells us, there are __no__ canaries, so probably some self implemented canary. And indeed, the canary is manually compared with a hardcoded value. So our exploit (`gets` does not limit input length, so we can simply overwrite everything) can overwrite the canary with the known value.
 Running `strings fake_canary` tells us, there is a `/bin/sh` and looking in the binary, we can find the function `win` that already does `system("/bin/sh");"`for us. So overwrite canary and after this, we overwrite the saved `rbp` with a reasonable value and the `return instruction pointer` with `0x400726` which is inside the `win` function. __Note__ Ubuntu 18.04 libc needs a 16-byte aligned stack, however stack is only 8-byte aligned normally. In this case, we skip the `push %rbp` instruction to get the required alignment.
-:w
 
 # The First Fit
 We have a simple program giving us access to `malloc` and `free`. Also, it executes the content of `b` on option `4`.
