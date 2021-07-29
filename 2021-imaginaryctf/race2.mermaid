@@ -1,0 +1,12 @@
+sequenceDiagram
+Note over Main Process: start as admin
+Note over Main Process: logout with pwd
+Main Process ->> checkPass(): start Process
+activate checkPass()
+Note over checkPass(): Match Regex against pwd<br/>complex password<br/>takes long time<br/>...
+Note over Main Process: sleep(2)
+Note over Main Process: Print menu (admin)
+checkPass()->> Main Process: SET admin.value = 0
+deactivate checkPass()
+Note over Main Process: Buy Flag
+

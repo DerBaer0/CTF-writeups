@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="graph-div"
+   width="100%"
+   height="621"
+   style="max-width: 494.5px;"
+   viewBox="-54.5 -10 494.5 621"
+   version="1.1"
+   sodipodi:docname="race2.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1077"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5090297"
+     inkscape:cx="47.381441"
+     inkscape:cy="297.21086"
+     inkscape:window-width="2560"
+     inkscape:window-height="1409"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="graph-div" />
+  <style
+     id="style944">#graph-div{font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;font-size:16px;fill:#333;}#graph-div .error-icon{fill:#552222;}#graph-div .error-text{fill:#552222;stroke:#552222;}#graph-div .edge-thickness-normal{stroke-width:2px;}#graph-div .edge-thickness-thick{stroke-width:3.5px;}#graph-div .edge-pattern-solid{stroke-dasharray:0;}#graph-div .edge-pattern-dashed{stroke-dasharray:3;}#graph-div .edge-pattern-dotted{stroke-dasharray:2;}#graph-div .marker{fill:#333333;stroke:#333333;}#graph-div .marker.cross{stroke:#333333;}#graph-div svg{font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;font-size:16px;}#graph-div .actor{stroke:hsl(259.6261682243,59.7765363128%,87.9019607843%);fill:#ECECFF;}#graph-div text.actor &gt; tspan{fill:black;stroke:none;}#graph-div .actor-line{stroke:grey;}#graph-div .messageLine0{stroke-width:1.5;stroke-dasharray:none;stroke:#333;}#graph-div .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#333;}#graph-div #arrowhead path{fill:#333;stroke:#333;}#graph-div .sequenceNumber{fill:white;}#graph-div #sequencenumber{fill:#333;}#graph-div #crosshead path{fill:#333;stroke:#333;}#graph-div .messageText{fill:#333;stroke:#333;}#graph-div .labelBox{stroke:hsl(259.6261682243,59.7765363128%,87.9019607843%);fill:#ECECFF;}#graph-div .labelText,#graph-div .labelText &gt; tspan{fill:black;stroke:none;}#graph-div .loopText,#graph-div .loopText &gt; tspan{fill:black;stroke:none;}#graph-div .loopLine{stroke-width:2px;stroke-dasharray:2,2;stroke:hsl(259.6261682243,59.7765363128%,87.9019607843%);fill:hsl(259.6261682243,59.7765363128%,87.9019607843%);}#graph-div .note{stroke:#aaaa33;fill:#fff5ad;}#graph-div .noteText,#graph-div .noteText &gt; tspan{fill:black;stroke:none;}#graph-div .activation0{fill:#f4f4f4;stroke:#666;}#graph-div .activation1{fill:#f4f4f4;stroke:#666;}#graph-div .activation2{fill:#f4f4f4;stroke:#666;}#graph-div:root{--mermaid-font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif;}</style>
+  <g
+     id="g946" />
+  <g
+     id="g955">
+    <line
+       id="actor1115"
+       x1="75"
+       y1="5"
+       x2="75"
+       y2="610"
+       class="actor-line"
+       stroke-width="0.5px"
+       stroke="#999" />
+    <rect
+       x="0"
+       y="0"
+       fill="#eaeaea"
+       stroke="#666"
+       width="150"
+       height="65"
+       rx="3"
+       ry="3"
+       class="actor"
+       id="rect949" />
+    <text
+       x="75"
+       y="32.5"
+       style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;"
+       dominant-baseline="central"
+       alignment-baseline="central"
+       class="actor"
+       id="text953"><tspan
+         x="75"
+         dy="0"
+         id="tspan951">Main Process</tspan></text>
+  </g>
+  <g
+     id="g964">
+    <line
+       id="actor1116"
+       x1="290"
+       y1="5"
+       x2="290"
+       y2="610"
+       class="actor-line"
+       stroke-width="0.5px"
+       stroke="#999" />
+    <rect
+       x="215"
+       y="0"
+       fill="#eaeaea"
+       stroke="#666"
+       width="150"
+       height="65"
+       rx="3"
+       ry="3"
+       class="actor"
+       id="rect958" />
+    <text
+       x="290"
+       y="32.5"
+       style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;"
+       dominant-baseline="central"
+       alignment-baseline="central"
+       class="actor"
+       id="text962"><tspan
+         x="290"
+         dy="0"
+         id="tspan960">checkPass()</tspan></text>
+  </g>
+  <defs
+     id="defs969">
+    <marker
+       id="arrowhead"
+       refX="9"
+       refY="5"
+       markerUnits="userSpaceOnUse"
+       markerWidth="12"
+       markerHeight="12"
+       orient="auto">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         id="path966" />
+    </marker>
+  </defs>
+  <defs
+     id="defs976">
+    <marker
+       id="crosshead"
+       markerWidth="15"
+       markerHeight="8"
+       orient="auto"
+       refX="16"
+       refY="4">
+      <path
+         fill="black"
+         stroke="#000000"
+         style="stroke-dasharray: 0px, 0px;"
+         stroke-width="1px"
+         d="M 9,2 V 6 L16,4 Z"
+         id="path971" />
+      <path
+         fill="none"
+         stroke="#000000"
+         style="stroke-dasharray: 0px, 0px;"
+         stroke-width="1px"
+         d="M 0,1 L 6,7 M 6,1 L 0,7"
+         id="path973" />
+    </marker>
+  </defs>
+  <defs
+     id="defs981">
+    <marker
+       id="filled-head"
+       refX="18"
+       refY="7"
+       markerWidth="20"
+       markerHeight="28"
+       orient="auto">
+      <path
+         d="M 18,7 L9,13 L14,7 L9,1 Z"
+         id="path978" />
+    </marker>
+  </defs>
+  <defs
+     id="defs986">
+    <marker
+       id="sequencenumber"
+       refX="15"
+       refY="15"
+       markerWidth="60"
+       markerHeight="40"
+       orient="auto">
+      <circle
+         cx="15"
+         cy="15"
+         r="6"
+         id="circle983" />
+    </marker>
+  </defs>
+  <g
+     id="g994">
+    <rect
+       x="0"
+       y="75"
+       fill="#EDF2AE"
+       stroke="#666"
+       width="150"
+       height="40"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect988" />
+    <text
+       x="75"
+       y="80"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text992"><tspan
+         x="75"
+         id="tspan990">start as admin</tspan></text>
+  </g>
+  <g
+     id="g1002">
+    <rect
+       x="0"
+       y="125"
+       fill="#EDF2AE"
+       stroke="#666"
+       width="150"
+       height="40"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect996" />
+    <text
+       x="75"
+       y="130"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1000"><tspan
+         x="75"
+         id="tspan998">logout with pwd</tspan></text>
+  </g>
+  <text
+     x="183"
+     y="180"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     alignment-baseline="middle"
+     style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+     class="messageText"
+     dy="1em"
+     id="text1004">start Process</text>
+  <line
+     x1="75"
+     y1="215"
+     x2="290"
+     y2="215"
+     class="messageLine0"
+     stroke-width="2"
+     stroke="none"
+     style="fill:none;stroke:#000000;stroke-opacity:1"
+     marker-end="url(#arrowhead)"
+     id="line1006" />
+  <g
+     id="g1010"
+     transform="matrix(1.0157409,0,0,0.69895684,-4.56487,65.247661)">
+    <rect
+       x="285"
+       y="217"
+       fill="#edf2ae"
+       stroke="#666666"
+       width="10"
+       height="258"
+       rx="0"
+       ry="0"
+       class="activation0"
+       id="rect1008" />
+  </g>
+  <g
+     id="g1030">
+    <rect
+       x="190"
+       y="225"
+       fill="#EDF2AE"
+       stroke="#666"
+       width="200"
+       height="100"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect1012" />
+    <text
+       x="290"
+       y="230"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1016"><tspan
+         x="290"
+         id="tspan1014">Match Regex against pwd</tspan></text>
+    <text
+       x="290"
+       y="250"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1020"><tspan
+         x="290"
+         id="tspan1018">complex password</tspan></text>
+    <text
+       x="290"
+       y="270"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1024"><tspan
+         x="290"
+         id="tspan1022">takes long time</tspan></text>
+    <text
+       x="290"
+       y="290"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1028"><tspan
+         x="290"
+         id="tspan1026">...</tspan></text>
+  </g>
+  <g
+     id="g1038"
+     transform="translate(0,-110)">
+    <rect
+       x="0"
+       y="335"
+       fill="#edf2ae"
+       stroke="#666666"
+       width="150"
+       height="40"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect1032" />
+    <text
+       x="75"
+       y="340"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-weight:400;font-family:'trebuchet ms', verdana, arial, sans-serif"
+       class="noteText"
+       dy="1em"
+       id="text1036"><tspan
+         x="75"
+         id="tspan1034">sleep(2)</tspan></text>
+  </g>
+  <g
+     id="g1046"
+     transform="translate(0,-112)">
+    <rect
+       x="-4.5"
+       y="385"
+       fill="#edf2ae"
+       stroke="#666666"
+       width="159"
+       height="40"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect1040" />
+    <text
+       x="75"
+       y="390"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-weight:400;font-family:'trebuchet ms', verdana, arial, sans-serif"
+       class="noteText"
+       dy="1em"
+       id="text1044"><tspan
+         x="75"
+         id="tspan1042">Print menu (admin)</tspan></text>
+  </g>
+  <text
+     x="180"
+     y="360"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     alignment-baseline="middle"
+     style="font-weight:400;font-family:'trebuchet ms', verdana, arial, sans-serif"
+     class="messageText"
+     dy="12"
+     id="text1048">SET admin.value = 0</text>
+  <line
+     x1="285"
+     y1="395"
+     x2="75"
+     y2="395"
+     class="messageLine0"
+     stroke-width="2"
+     stroke="none"
+     style="fill:none;stroke:#000000;stroke-opacity:1"
+     marker-end="url(#arrowhead)"
+     id="line1050" />
+  <g
+     id="g1058">
+    <rect
+       x="0"
+       y="485"
+       fill="#EDF2AE"
+       stroke="#666"
+       width="150"
+       height="40"
+       rx="0"
+       ry="0"
+       class="note"
+       id="rect1052" />
+    <text
+       x="75"
+       y="490"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       alignment-baseline="middle"
+       style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-weight: 400;"
+       class="noteText"
+       dy="1em"
+       id="text1056"><tspan
+         x="75"
+         id="tspan1054">Buy Flag</tspan></text>
+  </g>
+  <g
+     id="g1066">
+    <rect
+       x="0"
+       y="545"
+       fill="#eaeaea"
+       stroke="#666"
+       width="150"
+       height="65"
+       rx="3"
+       ry="3"
+       class="actor"
+       id="rect1060" />
+    <text
+       x="75"
+       y="577.5"
+       style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;"
+       dominant-baseline="central"
+       alignment-baseline="central"
+       class="actor"
+       id="text1064"><tspan
+         x="75"
+         dy="0"
+         id="tspan1062">Main Process</tspan></text>
+  </g>
+  <g
+     id="g1074">
+    <rect
+       x="215"
+       y="545"
+       fill="#eaeaea"
+       stroke="#666"
+       width="150"
+       height="65"
+       rx="3"
+       ry="3"
+       class="actor"
+       id="rect1068" />
+    <text
+       x="290"
+       y="577.5"
+       style="text-anchor: middle; font-weight: 400; font-family: &quot;Open-Sans&quot;, &quot;sans-serif&quot;;"
+       dominant-baseline="central"
+       alignment-baseline="central"
+       class="actor"
+       id="text1072"><tspan
+         x="290"
+         dy="0"
+         id="tspan1070">checkPass()</tspan></text>
+  </g>
+</svg>
