@@ -92,7 +92,7 @@ In the second case, we provide an invalid but long password. In this case, the s
 5. We get the admin menu, but wait until the failure message is received
 6. Buy the flag
 
-```
+```python
 from pwn import *
 import sys
 import time
