@@ -1,4 +1,4 @@
-# No Thougts, Head Empty
+# No Thoughts, Head Empty
 # Fewer Thoughts, Head Emptier
 Both challenges are quite similar, so I only write a single writeup for them.
 
