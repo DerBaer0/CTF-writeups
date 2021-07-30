@@ -47,12 +47,14 @@ We can solve this using simulation or reversing the code. I will discuss both wa
 But if you just want a quick idea:
 - Run it in an emulator and look at the tape while running
 - Each letter's ascii value is computed as `a * b - c * d`, where all 4 variables can be obtained from the source with a bit of parsing.
+[More detailed Writeup](2021-imaginaryctf/Misc-FewerToughts.md)
 
 ### Fewer thoughs, Head emptier
-I'll write a seperate, more detailed writeup to this soon. For a quick idea see `No thoughts Head empty` above.
+[More detailed Writeup](2021-imaginaryctf/Misc-FewerToughts.md)
 
 ### Off the races
-I'll write a seperate, more detailed writeup soon. Quick Idea: Loose money on the bet, race condition with logging in caused by a complex regex.
+Quick Idea: Loose money on the bet, race condition with logging in caused by a complex regex.
+[Writeup](2021-imaginaryctf/Reversing-OffToTheRaces.md)
 
 ### Roolang
 We are given an interpreter for the language `roolang` that contains of small images.
