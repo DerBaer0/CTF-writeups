@@ -50,11 +50,12 @@ But if you just want a quick idea:
 [More detailed Writeup](2021-imaginaryctf/Misc-FewerToughts.md)
 
 ### Fewer thoughs, Head emptier
-[More detailed Writeup](2021-imaginaryctf/Misc-FewerToughts.md)
+[More detailed Writeup](Reversing-FewerToughts.md)
 
 ### Off the races
 Quick Idea: Loose money on the bet, race condition with logging in caused by a complex regex.
-[Writeup](2021-imaginaryctf/Reversing-OffToTheRaces.md)
+
+[Writeup](Reversing-OffToTheRaces.md)
 
 ### Roolang
 We are given an interpreter for the language `roolang` that contains of small images.
